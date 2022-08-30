@@ -58,7 +58,10 @@
 														<a title="Dashboard" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 													</li>
 													<li class="menu-item" >
-														<a title="Categories" href="{{route('admin.categories')}}">Category</a>
+														<a title="Categories" href="{{route('admin.categories')}}">Categories</a>
+													</li>
+													<li class="menu-item" >
+														<a title="Products" href="{{route('admin.products')}}">Products</a>
 													</li>
 													<form action="{{route('logout')}}" method="post" id="logout-form">
 														@csrf
