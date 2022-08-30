@@ -45,7 +45,7 @@
                     <div class="stock-info in-stock">
                         <p class="availability">Availability: <b>{{$product->stock_status}}</b></p>
                     </div>
-                    <div class="quantity">
+                    {{-- <div class="quantity">
                         <span>Quantity:</span>
                         <div class="quantity-input">
                             <input type="text" name="product-quatity" value="1" data-max="120" pattern="[0-9]*" >
@@ -53,7 +53,7 @@
                             <a class="btn btn-reduce" href="#"></a>
                             <a class="btn btn-increase" href="#"></a>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="wrap-butons">
                         <a href="{{route('product.cart')}}" class="btn add-to-cart" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})">Add to Cart</a>
                         <div class="wrap-btn">
