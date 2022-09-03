@@ -1,3 +1,3 @@
 <div>
-    {{-- The whole world belongs to you. --}}
+    <h1>Welcome to Dashboard!</h1>
 </div>

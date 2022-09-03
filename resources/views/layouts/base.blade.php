@@ -55,9 +55,6 @@
 														<a title="Dashboard" href="{{route('admin.dashboard')}}">Dashboard</a>
 													</li>
 													<li class="menu-item" >
-														<a title="Dashboard" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-													</li>
-													<li class="menu-item" >
 														<a title="Categories" href="{{route('admin.categories')}}">Categories</a>
 													</li>
 													<li class="menu-item" >
@@ -66,6 +63,12 @@
 													<li class="menu-item" >
 														<a title="Manage Home Slider" href="{{route('admin.homeslider')}}">Manage Home Slider</a>
 													</li>
+													<li class="menu-item" >
+														<a title="Dashboard" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+													</li>
+													{{-- <li class="menu-item" >
+														<a title="Manage Home Slider" href="{{route('admin.orders')}}">Orders</a>
+													</li> --}}
 													
 													<form action="{{route('logout')}}" method="post" id="logout-form">
 														@csrf
@@ -78,6 +81,12 @@
 												<ul class="submenu curency" >
 													<li class="menu-item" >
 														<a title="Dashboard" href="{{route('user.dashboard')}}">Dashboard</a>
+													</li>
+													<li class="menu-item" >
+														<a title="My Profile" href="{{route('user.profile')}}">My Profile</a>
+													</li>
+													<li class="menu-item" >
+														<a title="Change Password" href="{{route('user.changepassword')}}">Change Password</a>
 													</li>
 													<li class="menu-item" >
 														<a title="Dashboard" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
