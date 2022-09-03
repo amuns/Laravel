@@ -22,3 +22,5 @@ class ShopComponent extends Component
         return redirect()->route('product.cart');
     }
 }
+
+?>

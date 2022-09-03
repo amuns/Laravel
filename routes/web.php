@@ -44,6 +44,8 @@ Route::get('/product/{slug}', DetailsComponent::class)->name('product.details');
 
 Route::get('/search', SearchComponent::class)->name('product.search');
 
+// Route::get('/checkout', CheckoutComponent::class);
+
 
 /* Route::middleware([
     'auth:sanctum',
